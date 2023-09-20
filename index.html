@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <title>Document</title>
+    <link rel="stylesheet" href="src/styles.css"><link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200&family=Roboto+Mono&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+<body>
+    
+<div class="container">
+    <div class="weather-app">
+    <h1>
+        Weather Forecast
+    </h1>
+    <div class="row">
+        <div class="col-4">
+           <h2></h2> 
+        </div>
+        <div class="col-5">
+            <form id = "search-form" class="search-text-input">
+               
+                <input 
+                type="text" 
+                placeholder="Search a city here" 
+                autofocus="on"
+                autocomplete="off"
+                id="search-text-input"
+                />
+                <input type="submit" value = "Search" class="search-button"/>
+               
+            </form>
+        </div>
+        <div class="col-3">
+            <button>
+                Current Location
+            </button>
+        </div>
+        <!-- <div class="col-1">
+            <img src="images/search.png" alt="the vector of a magnifying glass" width="20px">
+        </div> -->
+    </div>
+
+    <div class="weather-information">
+        
+        <div class="col-8" id="city-name">
+        <h3>
+            
+        </h3>
+        </div>
+        <br>
+        <div class="row">
+        <div class="col-4">
+        <h4>
+           <span class="temperature" id="temperature-display"></span>
+<!-- span with metric temperature if put back need to close the a link and the span span class="metric">
+a href="#" id="temperature-celsius">ºC
+span with imperial temperature if put back need to close the a link and the span span class="imperial">//a href="#" id="temperature-fahrenheit">|ºF -->
+        </h4>
+        </div>
+        <div class="col-2">
+            <span class="material-symbols-outlined" style="font-size: 40px;color: #8ed2c9;">
+                thermostat
+                </span>
+        </div>
+        <div class="col-6">
+        
+            <h5>
+            Precipitation: 0%
+            <br>
+            Wind: 21km/h
+            </h5>
+        </div>
+    
+    </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+<script src="src/index.js"></script>
+</body>
+</html>
